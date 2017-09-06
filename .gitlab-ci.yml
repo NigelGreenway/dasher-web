@@ -1,0 +1,18 @@
+image: node:8.4
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+  - test
+
+development_test_and_qa:
+  stage: test
+  script:
+   - npm install
+   - ./node_modules/.bin/flow-typed install
+   - npm test
+   - npm run qa
+   - npm run flow
+
