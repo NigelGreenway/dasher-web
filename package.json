@@ -1,0 +1,73 @@
+{
+  "name": "dasher-theme",
+  "version": "1.0.0",
+  "description": "Styled component theme for the Dasher application",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./tools/webpack.config.dev.babel.js",
+    "build": "webpack --config ./tools/webpack.config.prod.babel.js",
+    "flow": "flow",
+    "clean": "rm -r ./node_modules ./flow-typed ./build",
+    "qa": "eslint -c ./.eslintrc \"./{src,test}/**/*.{js,jsx}\"",
+    "test": "jest test",
+    "test::unit": "jest test/unit",
+    "postinstall": "flow-typed install",
+    "precommit": "npm run qa",
+    "prepush": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.fpixels.net/Dasher/theme.git"
+  },
+  "author": "Nigel Greenway",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^21.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-styled-components": "^1.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.54.0",
+    "flow-cli": "0.0.0-pre",
+    "flow-status-webpack-plugin": "^0.1.7",
+    "flow-typed": "^2.1.5",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.14.3",
+    "jest": "^21.1.0",
+    "node-sass": "^4.5.3",
+    "react-hot-loader": "^1.3.1",
+    "react-test-renderer": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "engines": {
+    "node": "8.4.0"
+  }
+}
