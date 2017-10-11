@@ -20,5 +20,5 @@ development-test-and-qa:
   artifacts:
     expire_in: 1 week
     paths:
-      - cypress/screenshots
-      - cypress/videos
+      - ./test/ui/cypress/screenshots
+      - ./test/ui/cypress/videos
