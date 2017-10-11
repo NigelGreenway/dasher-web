@@ -15,4 +15,4 @@ development_test_and_qa:
    - npm test
    - npm run qa
    - npm run flow
-
+   - npm run cypress
