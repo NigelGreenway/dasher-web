@@ -1,6 +1,4 @@
-image: cypress/internal:cy-0.19.2
-
-
+image: cypress/internal:latest
 image: node:8.4
 
 cache:
