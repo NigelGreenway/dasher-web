@@ -15,7 +15,7 @@ development-test-and-qa:
     - npm test
     - npm run qa
     - npm run flow
-    - npm start
+    - npm start -- --quiet > /dev/null &
     - npm run cypress
   artifacts:
     expire_in: 1 week
