@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --config ./tools/webpack.config.dev.babel.js",
     "build": "webpack --config ./tools/webpack.config.prod.babel.js",
     "flow": "flow",
+    "cypress": "npx cypress run --project ./test/ui",
     "clean": "rm -r ./node_modules ./flow-typed ./build",
     "qa": "eslint -c ./.eslintrc \"./{src,test}/**/*.{js,jsx}\"",
     "test": "jest --config ./jest.config.json test",
