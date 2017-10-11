@@ -3,3 +3,5 @@ node_modules
 flow-typed
 build
 npm-debug*
+test/ui/cypress/screenshots
+test/ui/cypress/videos
