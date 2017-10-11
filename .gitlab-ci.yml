@@ -17,7 +17,7 @@ development-test-and-qa:
     - npm run flow
     - npm run cypress
   artifacts:
-  expire_in: 1 week
-  paths:
-    - cypress/screenshots
-    - cypress/videos
+    expire_in: 1 week
+    paths:
+      - cypress/screenshots
+      - cypress/videos
