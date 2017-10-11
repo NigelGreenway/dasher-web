@@ -7,17 +7,7 @@ cache:
 stages:
   - test
 
-cypress-e2e:
-  stage: test
-  script:
-    - cypress run
-  artifacts:
-    expire_in: 1 week
-    paths:
-    - cypress/screenshots
-    - cypress/videos
-
-development_test_and_qa:
+development-test-and-qa:
   stage: test
   script:
    - npm install
@@ -25,3 +15,9 @@ development_test_and_qa:
    - npm test
    - npm run qa
    - npm run flow
+   - npm run cypress
+   artifacts:
+    expire_in: 1 week
+    paths:
+      - cypress/screenshots
+      - cypress/videos
