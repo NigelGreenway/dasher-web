@@ -10,14 +10,14 @@ stages:
 development-test-and-qa:
   stage: test
   script:
-   - npm install
-   - ./node_modules/.bin/flow-typed install
-   - npm test
-   - npm run qa
-   - npm run flow
-   - npm run cypress
-   artifacts:
-    expire_in: 1 week
-    paths:
-      - cypress/screenshots
-      - cypress/videos
+    - npm install
+    - ./node_modules/.bin/flow-typed install
+    - npm test
+    - npm run qa
+    - npm run flow
+    - npm run cypress
+  artifacts:
+  expire_in: 1 week
+  paths:
+    - cypress/screenshots
+    - cypress/videos
