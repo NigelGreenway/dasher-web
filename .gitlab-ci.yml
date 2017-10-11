@@ -1,3 +1,6 @@
+image: cypress/internal:cy-0.19.2
+
+
 image: node:8.4
 
 cache:
@@ -7,6 +10,16 @@ cache:
 stages:
   - test
 
+cypress-e2e:
+  stage: test
+  script:
+    - cypress run
+  artifacts:
+    expire_in: 1 week
+    paths:
+    - cypress/screenshots
+    - cypress/videos
+
 development_test_and_qa:
   stage: test
   script:
@@ -15,4 +28,3 @@ development_test_and_qa:
    - npm test
    - npm run qa
    - npm run flow
-   - npm run cypress
