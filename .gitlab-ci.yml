@@ -1,5 +1,4 @@
-image: cypress/internal:latest
-image: node:8.4
+image: cypress/base:8
 
 cache:
   paths:
