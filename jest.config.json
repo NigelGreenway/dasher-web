@@ -1,0 +1,8 @@
+{
+  "bail": true,
+  "notify": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "./src/**/*.{js,jsx}"
+  ]
+}

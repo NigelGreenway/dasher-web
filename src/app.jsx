@@ -1,7 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import { BrowserRouter } from 'react-router-dom';
+import App from './Pages/App';
 
 import stylesheet from './sass/style.scss';
 
@@ -10,6 +11,8 @@ if (module.hot) {
 }
 
 render(
-  <App />,
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>,
   document.getElementById('app'),
 );
