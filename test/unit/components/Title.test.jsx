@@ -13,7 +13,7 @@ describe('The Title component', () => {
       expect(typeof component).toBe('object');
     });
 
-    test('should have a string of `I am a heading` as the name prop', () => {
+    test('should have a string of `I am a heading` as the content prop', () => {
       const component = shallow(
         <Title content="I am a heading" />,
       );
