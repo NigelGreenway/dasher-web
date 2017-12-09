@@ -14,7 +14,7 @@ describe('The Title component', () => {
     });
 
     test('should have a string of `I am a heading` as the content prop', () => {
-      const component = shallow(
+      const component = mount(
         <Title content="I am a heading" />,
       );
 
