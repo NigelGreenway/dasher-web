@@ -13,8 +13,8 @@ describe('The Title component', () => {
       expect(typeof component).toBe('object');
     });
 
-    test('should have a string of `I am a heading` as the name prop', () => {
-      const component = shallow(
+    test('should have a string of `I am a heading` as the content prop', () => {
+      const component = mount(
         <Title content="I am a heading" />,
       );
 
